@@ -1,1 +1,229 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;900&display=swap");/*# sourceMappingURL=Page1_Home_Style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;700;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: Inter;
+}
+
+.footer {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.footer .footer__wrapper {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+@media (max-width: 1023px) {
+  .footer .footer__wrapper {
+    flex-direction: column;
+  }
+}
+.footer .footer__wrapper .footer-contacts {
+  max-width: 50%;
+  width: 100%;
+}
+.footer .footer__wrapper .footer-contacts .footer__phone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4 1fr);
+  gap: 5px;
+}
+.footer .footer__wrapper .footer-contacts .footer__phone .phone {
+  grid-area: 1/1/2/3;
+}
+.footer .footer__wrapper .footer-contacts .footer-map {
+  max-width: 100%;
+  width: 100%;
+}
+
+.form {
+  max-width: 680px;
+  height: 690px;
+  margin: 60px 0px;
+  background: #376FFF;
+  border-radius: 10px;
+  color: white;
+}
+@media (max-width: 1023px) {
+  .form {
+    width: 462px;
+  }
+}
+@media (max-width: 767px) {
+  .form {
+    width: 334px;
+    height: 651px;
+  }
+}
+@media (max-width: 320px) {
+  .form {
+    width: 288px;
+    height: 606px;
+  }
+}
+.form .form__box {
+  max-width: 560px;
+  height: 570px;
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .form .form__box {
+    margin: 40px;
+    gap: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .form .form__box {
+    margin: 20px;
+    gap: 9px;
+  }
+}
+.form .form__box .form__header {
+  font-size: 38px;
+  font-weight: 900;
+}
+@media (max-width: 767px) {
+  .form .form__box .form__header {
+    font-size: 28px;
+  }
+}
+.form .form__box .form__text {
+  font-size: 20px;
+  font-weight: 200;
+}
+.form .form__box .form__item {
+  width: 560px;
+  height: 60px;
+  font-weight: 200;
+  padding: 0 32px;
+  background: #376FFF;
+  line-height: 55px;
+  border: 2px solid #C1D3DE;
+  border-radius: 10px;
+}
+@media (max-width: 1023px) {
+  .form .form__box .form__item {
+    width: 342px;
+    height: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .form .form__box .form__item {
+    width: 254px;
+    height: 60px;
+  }
+}
+@media (max-width: 320px) {
+  .form .form__box .form__item {
+    width: 248px;
+    height: 48px;
+  }
+}
+.form .form__box .form__item::-webkit-input-placeholder {
+  color: #C1D3DE;
+}
+.form .form__box .form__item::-moz-placeholder {
+  color: #C1D3DE;
+}
+.form .form__box .form__textarea {
+  height: 120px;
+}
+.form .form__box .form__button {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 200;
+}
+@media (max-width: 1023px) {
+  .form .form__box .form__button {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .form .form__box .form__button {
+    flex-direction: column;
+  }
+}
+@media (max-width: 320px) {
+  .form .form__box .form__button {
+    flex-direction: column;
+  }
+}
+.form .form__box .form__button-item {
+  width: 208px;
+  height: 60px;
+  padding: 0 15px;
+  margin: 10px 0 15px;
+  border-width: 0;
+  line-height: 18px;
+  border-radius: 12px;
+  color: #376FFF;
+  background: white;
+  font-weight: 700;
+}
+@media (max-width: 1023px) {
+  .form .form__box .form__button-item {
+    width: 342px;
+  }
+}
+@media (max-width: 767px) {
+  .form .form__box .form__button-item {
+    width: 254px;
+  }
+}
+@media (max-width: 320px) {
+  .form .form__box .form__button-item {
+    width: 248px;
+    height: 48px;
+  }
+}
+.form .form__box .form__checkbox {
+  width: 332px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1023px) {
+  .form .form__box .form__checkbox {
+    width: 342px;
+  }
+}
+@media (max-width: 767px) {
+  .form .form__box .form__checkbox {
+    width: 254px;
+  }
+}
+@media (max-width: 320px) {
+  .form .form__box .form__checkbox {
+    width: 248px;
+  }
+}
+.form .form__box .form__checkbox-item {
+  width: 20px;
+  height: 20px;
+}
+.form .form__box .form__agreement-wrapper {
+  width: 262px;
+  height: 48px;
+  margin-left: 12px;
+  line-height: 25px;
+  color: #C1D3DE;
+}
+.form .form__box .form__link {
+  text-transform: none;
+  color: #C1D3DE;
+}/*# sourceMappingURL=Page1_Home_Style.css.map */
