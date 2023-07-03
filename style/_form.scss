@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    // border: 1px solid
+}
+
+.form {
+    max-width: 680px;
+    height: 691px;
+    background: $bright_basic;
+    border-radius: 10px;
+    color: $dark_basic;
+    display: flex;
+    align-items: center;
+    @media (max-width:$l) {
+        width: 462px;
+    }
+    @media (max-width: $m) {
+        width: 334px;
+        height: 651px;
+    }
+    @media (max-width: $s) {
+        width: 288px;
+        height: 606px;
+    }
+        .form__box {
+            max-width: 560px;
+            height: 570px;
+            margin: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            @media (max-width: $m) {
+                margin: 40px;
+                gap: 12px;
+            }
+            @media (max-width: $s) {
+                margin: 40px 20px;
+                gap: 9px;
+            }
+            .form__title {
+                font-size: 38px;
+                font-weight: 900;
+                @media (max-width: $m) {
+                    font-size: 28px;
+                }
+            }
+            .form__text {
+                font-size: 20px;
+                font-weight: 200;
+                @media (max-width: $m) {
+                    font-size: 16px;
+                    line-height: 3em;
+                }
+            }
+            .form__item {
+                width: 560px;
+                height: 60px;
+                font-weight: 200;
+                color: $dark_basic;
+                padding: 0 32px;
+                background: $bright_basic;
+                line-height: 20px;
+                border: 2px solid $dark_secondary;
+                border-radius: 10px;
+                @media (max-width:$l) {
+                    width: 342px;
+                    height: 60px;
+                }
+                @media (max-width: $m) {
+                    width: 254px;
+                    height: 60px;
+                }
+                @media (max-width: $s) {
+                    width: 248px;
+                    height: 48px;
+                }
+            }
+            .form__item::-webkit-input-placeholder {
+                color: $dark_secondary;
+            }
+            .form__item::-moz-placeholder {
+                color: $dark_secondary;
+            }
+            .form__textarea {
+                height: 120px;
+                resize:none;
+                padding-top: 20px;
+            }
+            .form__button {
+                display: flex;
+                justify-content: space-between;
+                font-weight: 200;
+                @media (max-width:$l) {
+                    flex-direction: column;
+                }
+                @media (max-width: $m) {
+                    flex-direction: column;
+                }
+                @media (max-width: $s) {
+                    flex-direction: column;
+                }
+            }
+            .form__button-item {
+                width: 208px;
+                height: 60px;
+                padding: 0 15px;
+                margin: 10px 0 15px;
+                border-width: 0;
+                line-height: 18px;
+                border-radius: 12px;
+                color: $bright_basic;
+                background: $dark_basic;
+                font-weight: 700;
+                @media (max-width:$l) {
+                    width: 342px;
+                }
+                @media (max-width: $m) {
+                    width: 254px;
+                }
+                @media (max-width: $s) {
+                    width: 248px;
+                    height: 48px;
+                }
+            }
+            .form__checkbox {
+                width: 332px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media (max-width:$l) {
+                    width: 342px;
+                }
+                @media (max-width: $m) {
+                    width: 254px;
+                }
+                @media (max-width: $s) {
+                    width: 248px;
+                }
+            }
+            .form__checkbox-item {
+                width: 20px;
+                height: 20px;
+            }
+            .form__agreement-wrapper {
+                width: 262px;
+                height: 48px;
+                margin-left: 12px;
+                line-height: 25px;
+                color: $dark_secondary;
+                @media (max-width: $m) {
+                    font-size: 15px;
+                }
+                @media (max-width: $s) {
+                    font-size: 15px;
+                }
+            }
+            .form__link {
+                text-transform: none;
+                color: $dark_secondary;
+            }
+        }
+    }
