@@ -22,9 +22,11 @@ body {
     @media (max-width: $s) {
         max-width: $container-s;
     }
+}
 
 .footer {
-        background:$lightgrey_basic;
+    background-color: #EDF4FA;
+    background-image: url(../../assets/img/template/light-blue-bg.svg);
         display: flex;
         flex-direction: column;
         flex-basis: auto;
@@ -170,4 +172,3 @@ body {
         font-size: 16px;
         margin-top: 20px;
     }
-}
