@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;900&display=swap");
+.container {
+  max-width: 1401px;
+  margin: 0 auto;
+}
+@media (max-width: 1460px) {
+  .container {
+    max-width: 944px;
+  }
+}
+@media (max-width: 1023px) {
+  .container {
+    max-width: 688px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 288px;
+  }
+}
+
 .section-title {
   font-family: "Inter", Arial, sans-serif;
   font-size: 38px;
@@ -242,6 +262,17 @@
 .link-like {
   color: #376FFF;
   text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 900;
 }
 
 * {

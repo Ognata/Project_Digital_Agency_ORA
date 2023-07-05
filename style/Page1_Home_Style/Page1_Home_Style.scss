@@ -5,9 +5,225 @@
 @import '../template_header';
 @import '../form';
 @import '../template_footer';
+@import './template_OurClients';
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     // border: 1px solid
 }
+
+   //Блок 3_Мы не будем рисовать несбыточные прогнозы...(начало)
+
+    .advertising-service {
+        background-color: $purple_basic;
+        color: $dark_basic;
+        .advertising-service__container {
+            min-height: 790px;
+            @media (max-width: $l) {
+                min-height: 683px;
+            }
+            @media (max-width: $m) {
+                min-height: 743px;
+            }
+            @media (max-width: $s) {
+                min-height: 1402px;
+            }
+            .container__title-text{
+                padding-top: 80px;
+                color:$dark_basic;
+                text-align: center;
+                line-height: 40px;
+                @media (max-width: $l) {
+                    padding-top: 60px;
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+                @media (max-width: $m) {
+                    padding-top: 60px;
+                }
+                @media (max-width: $s) {
+                    padding-top: 40px;
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+            .container__adv-cards{
+                min-height: 422px;
+                padding-top: 40px;
+                display:grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: start;
+                column-gap: 40px;
+                @media (max-width: $l) {
+                    min-height: 379px;
+                }
+                @media (max-width: $m) {
+                    min-height: 451px;
+                }
+                @media (max-width: $s) {
+                    min-height: 415px;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .adv-cards__card-info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    border-top: 1px solid $light_basic;
+                    @media (max-width: $s) {
+                        margin-bottom: 40px;
+                    }
+                    .card-info__logo{
+                        margin: 0;
+                        padding: 33px 0 33px 0;
+                        @media (max-width: $l) {
+                            padding: 20px 0 20px 0;
+                        }
+                        @media (max-width: $s) {
+                            padding: 40px 0;
+                        }
+                        .logo{
+                        width: 58px;
+                        height: 58px;
+                        }
+                    }
+                    .card-info__text{
+                        height: 198px;
+                        @media (max-width: $s) {
+                            height: 254px;
+                        }
+                        .title {
+                            font-weight: 700;
+                            font-size: 26px;
+                            line-height: 33.8px;
+                            @media (max-width: $m) {
+                                font-size: 18px;
+                                line-height: 26px;
+                            }
+                        }
+                        .text {
+                            padding-top: 24px;
+                            font-size: 20px;
+                            @media (max-width: $l) {
+                                padding-top: 12px;
+                            }
+                            @media (max-width: $m) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .button {
+                        margin-top: 50px;
+                        @include btn(60px,$bright_basic, $dark_basic);
+                        @media (max-width: $s) {
+                        @include btn(48px,$bright_basic, $dark_basic);
+                            margin-top: -20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+        //Блок 3_Мы не будем рисовать несбыточные прогнозы...(конец)
+    
+        //Блок 4_Наши последние работы(начало)
+        
+    .our-last-works{
+        background-image: url(../../assets/img/template/background-graph-paper.jpg);
+        .our-last-works__container{
+            min-height: 684px;
+            text-align: center;
+            @media (max-width: $l) {
+                min-height: 536px;
+            }
+            @media (max-width: $m) {
+                min-height: 578px;
+            }
+            @media (max-width: $s) {
+                min-height: 428px;
+            }
+            .our-last-works__text-block {
+                color:$dark_tertiary;
+                text-align: center;
+                .text-block__title{
+                    padding-top: 80px;
+                    line-height: 40px;
+                    @media (max-width: $l) {
+                        padding-top: 60px;
+                        font-size: 28px;
+                        line-height: 36px;
+                    }
+                    @media (max-width: $m) {
+                        padding-top: 40px;
+                    }
+                }
+                .text-block__add{
+                    padding: 24px 0;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 28px;
+                    @media (max-width: $l) {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    @media (max-width: $s) {
+                        font-size: 20px;
+                        line-height: 28px;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+            .our-last-works__images-block{
+                display: flex;
+                flex-flow: nowrap;
+                justify-content: space-between;
+                gap: 40px;
+                padding-bottom: 20px;
+                @media (max-width: $l) {
+                    gap: 20px;
+                }
+                @media (max-width: $m) {
+                    .picture:first-child {
+                        display: none;
+                    }
+                    .picture:last-child {
+                        display: none;
+                    }
+                }
+                @media (max-width: $s) {
+                    gap: 10px;
+                }
+                .picture {
+                    max-width: 320px;
+                    @media (max-width: $l) {
+                        max-width: 220.4px;
+                    }
+                    @media (max-width: $m) {
+                        max-width: 334px;
+                    }
+                    @media (max-width: $s) {
+                        max-width: 140px;
+                    }
+                }
+            }
+            .our-last-works__arrow-buttons{
+                display: flex;
+                justify-content: space-between;
+                .arrow-button {
+                    padding: 0;
+                    border: none;
+                    background: none;
+                    .arrow-button-img{
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+        //Блок 4_Наши последние работы(конец)
+    
+        //Блок 5_Клиенты, которые нам доверяют (отдельный файл _template_OurClients.scss (для всех страниц, кроме Contacts)
