@@ -671,6 +671,7 @@ body {
   }
 }
 .container .footer {
+  background: #EDF4FA;
   display: flex;
   flex-direction: column;
   flex-basis: auto;
@@ -842,7 +843,7 @@ body {
     margin-bottom: 20px;
   }
 }
-.container .footer__wrapper .footer__copyright {
+.container .footer__copyright {
   display: block;
   color: #8B9BAB;
   font-weight: 200;
