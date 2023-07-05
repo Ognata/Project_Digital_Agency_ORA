@@ -5,3 +5,232 @@
 @import '../template';
 @import '../form';
 @import '../template_footer';
+
+h2 {
+    font-family: $font;
+    font-size: 38px;
+    font-weight: 900;
+    color: $dark_tertiary;
+}
+
+.container {
+    max-width: $container-xl;
+    margin: 0 auto;
+}
+
+// Секция с аккордеоном "Почему стоит выбрать именно нас"
+
+.about-working {
+    &__container {
+        display: flex;
+        min-height: 700px;
+        margin: 80px auto;
+        align-items: center;
+    }
+
+    &__image {
+        width: 680px;
+        height: 680px;
+        margin-right: 36px;
+    }
+}
+
+// Дизайн аккордеона
+.accordion {
+    padding: 0;
+    max-width: 680px;
+
+    &__line {
+        border: none;
+        border-top: 1px solid #C1D3DE;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    &__spoiler {
+        padding-left: 44px;
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 400;
+        color: $purple_basic;
+        line-height: 28px;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    &__block {
+        list-style-type: none;
+        width: 100%;
+        margin-bottom: 20px;
+
+        label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: $purple_basic;
+        }
+
+        label::before {
+            content: url(../../assets/img/template/circle-plus.png);
+            margin-right: 20px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.accordion {
+
+    input[type="checkbox"]:checked+label+.accordion__spoiler {
+        max-height: 400px;
+    }
+
+    input[type="checkbox"]:checked+label::before {
+        content: url(../../assets/img/template/circle-minus.png);
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: $l) {
+    .container {
+        width: $container-l;
+    }
+
+    .about-working {
+        &__container {
+            min-height: 596px;
+            margin: 60px auto;
+        }
+
+        &__tittle {
+            margin: 0px;
+            margin-bottom: 40px;
+        }
+
+        &__image {
+            width: 462px;
+            height: 462px;
+            margin-right: 23px;
+        }
+
+    }
+
+    .accordion {
+        max-width: 462px;
+        margin: 0;
+
+        &__line:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        &__spoiler {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__block {
+            margin-bottom: 16px;
+
+            label {
+                font-size: 16px;
+            }
+        }
+
+        &__text {
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: $m) {
+    .container {
+        width: $container-m;
+        margin: 0 auto;
+    }
+
+    .about-working {
+        &__container {
+            min-height: 612px;
+            margin: 60px auto;
+        }
+
+        &__image {
+            width: 334px;
+            height: 334px;
+            padding-left: 0px;
+            margin-right: 23px;
+        }
+
+        &__tittle {
+            font-size: 28px;
+        }
+    }
+
+    .accordion {
+        max-width: 334px;
+
+        &__block {
+            margin-bottom: 16px;
+
+            label {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: $s) {
+    .container {
+        width: $container-s;
+    }
+
+    .about-working {
+        &__container {
+            min-height: 920px;
+            flex-direction: column;
+            margin: 50px auto;
+        }
+
+        &__image {
+            width: 288px;
+            height: 288px;
+            margin-bottom: 20px;
+        }
+
+        &__tittle {
+            margin-bottom: 32px;
+        }
+    }
+
+    .accordion {
+        &__block {
+            margin-bottom: 4px;
+
+            label {
+                margin-bottom: 8px;
+            }
+        }
+
+        &__line:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+        &__text {
+            margin-bottom: 12px;
+        }
+    }
+}
