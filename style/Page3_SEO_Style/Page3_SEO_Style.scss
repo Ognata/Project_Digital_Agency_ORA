@@ -5,4 +5,276 @@
 @import '../template_header';
 @import '../form';
 @import '../template_footer';
+@import '../template_OurClients';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.h2 {
+    font-family: $font;
+    font-size: 38px;
+    font-weight: 900;
+    color: $dark-tertiary;
+}
+
+.container {
+    width: $container-xl;
+    margin: 0 auto;
+}
+
+.about-working {
+    &__container {
+        min-height: 574px;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        margin-bottom: 80px;
+    }
+
+    &__tittle {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+// дизайн аккордеона
+.accordion {
+    &__line {
+        border: none;
+        border-top: 1px solid #C1D3DE;
+    }
+
+    &__line:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__spoiler {
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 400;
+        color: $dark-tertiary;
+        line-height: 28px;
+        max-height: 0;
+        overflow: hidden;
+        margin-left: 44px;
+    }
+
+    &__subtittle {
+        margin-bottom: 8px;
+    }
+
+    &__list {
+        position: relative;
+        left: 20px;
+    }
+
+    &__punkt {
+        margin-bottom: 8px;
+    }
+
+    &__punkt:last-child {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: flex;
+        align-items: start;
+        cursor: pointer;
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 700;
+        color: $dark-tertiary;
+        margin-bottom: 20px;
+    }
+
+
+    label::before {
+        content: url(../../assets/img/template/circle-plus.png);
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.accordion {
+    input[type="checkbox"]:checked+label+.accordion__spoiler {
+        max-height: 400px;
+    }
+
+    input[type="checkbox"]:checked+label::before {
+        content: url(../../assets/img/template/circle-minus.png);
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: $l) {
+    .container {
+        width: $container-l;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .about-working {
+        &__container {
+            min-height: 494px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+    }
+
+    // дизайн аккордеона
+    .accordion {
+        &__line:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        &__spoiler {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__punkt:last-child {
+            margin-bottom: 16px;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+
+@media (max-width: $m) {
+    .container {
+        width: $container-m;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .about-working {
+        &__container {
+            min-height: 558px;
+            margin: 40px auto;
+        }
+
+        &__tittle {
+            margin-bottom: 32px;
+        }
+    }
+
+    // дизайн аккордеона
+    .accordion {
+        &__line:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        &__spoiler {
+            font-size: 16px;
+            line-height: 24px;
+            margin-left: 32px;
+        }
+
+        &__subtittle {
+            margin-bottom: 8px;
+        }
+
+        &__list {
+            position: relative;
+            left: 20px;
+        }
+
+        &__punkt {
+            margin-bottom: 8px;
+        }
+
+        &__punkt:last-child {
+            margin-bottom: 16px;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+@media (max-width: $s) {
+    .container {
+        width: $container-s;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .about-working {
+        &__container {
+            min-height: 614px;
+            margin-top: 40px;
+            margin-bottom: 0px;
+        }
+
+        &__tittle {
+            margin-bottom: 32px;
+        }
+    }
+
+    // дизайн аккордеона
+    .accordion {
+        &__line:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+        &__line:last-child {
+            display: none;
+        }
+
+        &__spoiler {
+            font-size: 16px;
+            line-height: 24px;
+            margin-left: 32px;
+            padding-right: 20px;
+        }
+
+        &__punkt {
+            margin-bottom: 4px;
+        }
+
+        &__punkt:last-child {
+            margin-bottom: 12px;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        label::before {
+            margin-right: 8px;
+        }
+    }
+
+    .accordion {
+        input[type="checkbox"]:checked+label+.accordion__spoiler {
+            max-height: 1000px;
+        }
+    }
+}
 

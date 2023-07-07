@@ -5,8 +5,9 @@
 @import '../template';
 @import '../form';
 @import '../template_footer';
+@import '../template_OurClients';
 
-h2 {
+.h2 {
     font-family: $font;
     font-size: 38px;
     font-weight: 900;
