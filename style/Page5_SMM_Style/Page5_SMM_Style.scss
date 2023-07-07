@@ -7,6 +7,296 @@
 @import '../template_footer';
 @import '../template_OurClients';
 
+// section  "После определения аудитории..."
+
+// * {
+//     box-sizing: border-box;
+//     margin: 0;
+//     padding: 0;
+// }
+
+// .container {
+//     max-width: $container-xl;
+//     margin: 0 auto;
+// }
+
+// .objective-accordion {
+//     display: flex;
+//     align-items: center;
+
+//     &__container {
+//         max-width: 1400px;
+//         min-height: 956px;
+//         margin: 80px auto;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//     }
+
+//     &__text {
+//         font-family: $font;
+//         font-size: 26px;
+//         font-weight: 400;
+//         color: $dark_tertiary;
+//         margin-bottom: 40px;
+//         line-height: 130%;
+//     }
+// }
+
+// // Дизайн аккордеона
+// .accordion {
+//     &__line {
+//         border: none;
+//         border-top: 1px solid #C1D3DE;
+//         margin: 0;
+//     }
+
+//     &__line:not(:last-child) {
+//         margin-bottom: 20px;
+//     }
+
+//     &__spoiler {
+//         padding-left: 44px;
+//         font-family: $font;
+//         font-size: 20px;
+//         font-weight: 700;
+//         color: $purple_basic;
+//         line-height: 28px;
+//         max-height: 0;
+//         overflow: hidden;
+//     }
+
+//     &__text {
+//         font-family: $font;
+//         font-size: 20px;
+//         font-weight: 400;
+//         color: $purple_basic;
+//         line-height: 28px;
+
+//         &:first-child {
+//             margin-bottom: 8px;
+//         }
+
+//         &:last-child {
+//             margin-bottom: 20px;
+//         }
+
+//     }
+
+//     &__subtittle {
+//         font-family: $font;
+//         font-size: 20px;
+//         font-weight: 700;
+//         color: $purple_basic;
+//         line-height: 28px;
+//         margin-bottom: 4px;
+//     }
+
+//     &__block {
+//         list-style-type: none;
+//         width: 100%;
+
+//         label {
+//             display: flex;
+//             align-items: center;
+//             cursor: pointer;
+//             font-family: $font;
+//             font-size: 20px;
+//             font-weight: 700;
+//             color: $dark_tertiary;
+//             margin-bottom: 20px;
+//         }
+
+//         label::before {
+//             content: url(../../assets/img/template/circle-plus.png);
+//             margin-right: 20px;
+//             width: 24px;
+//             height: 24px;
+//         }
+//     }
+// }
+
+// input[type="checkbox"] {
+//     display: none;
+// }
+
+// .accordion {
+
+//     input[type="checkbox"]:checked+label+.accordion__spoiler {
+//         max-height: 400px;
+//     }
+
+//     input[type="checkbox"]:checked+label::before {
+//         content: url(../../assets/img/template/circle-minus.png);
+//         width: 24px;
+//         height: 24px;
+//     }
+// }
+
+// @media (max-width: $l) {
+//     .container {
+//         width: $container-l;
+//     }
+
+//     .objective-accordion {
+//         display: flex;
+//         align-items: center;
+
+//         &__container {
+//             max-width: 944px;
+//             min-height: 800px;
+//             margin: 60px auto;
+//         }
+
+//         &__text {
+//             font-size: 18px;
+//             line-height: 26px;
+//         }
+//     }
+
+//     .accordion {
+//         &__line:not(:last-child) {
+//             margin-bottom: 16px;
+//         }
+
+//         &__spoiler {
+//             font-size: 16px;
+//             line-height: 24px;
+//         }
+
+//         &__text {
+//             font-size: 16px;
+//             line-height: 24px;
+
+//             &:last-child {
+//                 margin-bottom: 16px;
+//             }
+//         }
+
+//         &__subtittle {
+//             font-size: 16px;
+//             line-height: 24px;
+//             margin-bottom: 4px;
+//         }
+
+//         &__block {
+//             label {
+//                 font-size: 16px;
+//                 margin-bottom: 16px;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: $m) {
+
+//     .container {
+//         max-width: $container-m;
+//     }
+
+//     .objective-accordion {
+//         &__container {
+//             min-height: 890px;
+//             margin: 40px auto;
+//         }
+
+//         &__text {
+//             margin-bottom: 32px;
+//             font-size: 18px;
+//             line-height: 26px;
+//         }
+//     }
+
+//     .accordion {
+
+//         &__line:not(:last-child) {
+//             margin-bottom: 16px;
+//         }
+
+//         &__spoiler {
+//             padding-left: 44px;
+//             font-size: 16px;
+//             line-height: 24px;
+//         }
+
+//         &__text {
+//             font-size: 16px;
+//             line-height: 24px;
+
+//             &:last-child {
+//                 margin-bottom: 16px;
+//             }
+
+//         }
+
+//         &__subtittle {
+//             font-size: 16px;
+//             line-height: 24px;
+//         }
+
+//         &__block {
+
+//             label {
+//                 font-size: 16px;
+//                 margin-bottom: 12px;
+//             }
+//         }
+
+//         input[type="checkbox"]:checked+label+.accordion__spoiler {
+//             max-height: 700px;
+//         }
+//     }
+// }
+
+// @media (max-width: $s) {
+
+//     .objective-accordion {
+//         &__container {
+//             min-height: 1198px;
+//             max-width: 288px;
+//         }
+
+//         &__text {
+//             margin-bottom: 32px;
+//             font-size: 18px;
+//             line-height: 26px;
+//         }
+//     }
+
+//     .accordion {
+//         &__line:not(:last-child) {
+//             margin-bottom: 12px;
+//         }
+
+//         &__spoiler {
+//             padding-left: 32px;
+//         }
+
+//         &__text {
+//             &:first-child {
+//                 margin-bottom: 4px;
+//             }
+//         }
+
+//         &__subtittle {
+//             margin-bottom: 0px;
+//         }
+
+//         &__block {
+//             label {
+//                 margin-bottom: 12px;
+//             }
+
+//             label::before {
+//                 margin-right: 8px;
+//             }
+//         }
+//     }
+// }
+
+// конец  section  "После определения аудитории..."
+
 //section content plan
 
 .section_name_content-plan {
@@ -138,3 +428,4 @@
         margin-top: 32px;
     }
 }
+
