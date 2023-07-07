@@ -933,10 +933,6 @@ a {
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-}
-
 body {
   font-family: "Inter", Arial, sans-serif;
 }
