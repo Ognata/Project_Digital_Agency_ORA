@@ -281,3 +281,33 @@
 }
 
 
+
+.container {
+    max-width: $container_xl;
+    margin: 0 auto;
+@media (max-width: $l) {
+    max-width: $container_l;
+}
+@media (max-width: $m) {
+    max-width: $container_m;
+}
+@media (max-width: $s) {
+    max-width: $container_s;
+}
+    }
+
+@mixin btn ($height, $bg, $color) {
+width:279px;
+height:$height;
+border-style:solid;
+border-color: $bg;
+border-width:1px;
+border-radius: 12px;
+background:$bg;
+color: $color;
+}  
+
+h2 {
+font-size: 38px;
+font-weight: 900;
+}

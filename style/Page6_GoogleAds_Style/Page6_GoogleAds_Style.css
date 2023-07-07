@@ -264,6 +264,31 @@
   text-decoration: underline;
 }
 
+.container {
+  max-width: 1401px;
+  margin: 0 auto;
+}
+@media (max-width: 1460px) {
+  .container {
+    max-width: 944px;
+  }
+}
+@media (max-width: 1023px) {
+  .container {
+    max-width: 688px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 288px;
+  }
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 900;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
