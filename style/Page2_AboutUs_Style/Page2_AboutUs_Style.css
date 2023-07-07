@@ -691,17 +691,6 @@ a {
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0 auto;
-  font-family: "Inter", Arial, sans-serif;
-}
-
-h2 {
-  font-size: 38px;
-  font-weight: 900;
-}
-
-* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -1177,6 +1166,7 @@ body {
   display: flex;
   row-gap: 10px;
   flex-flow: wrap;
+  justify-content: center;
 }
 @media (max-width: 1460px) {
   .our-clients__container .container__logos {

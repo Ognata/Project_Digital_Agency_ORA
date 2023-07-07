@@ -7,293 +7,804 @@
 @import '../template_footer';
 @import '../template_OurClients';
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: $container-xl;
+    margin: 0 auto;
+}
+
+// Секция 5 - "Таргетированная реклама"
+
+.container-target {
+    margin: 80px auto;
+    min-height: 595px;
+
+    &__tittle {
+        font-family: $font;
+        color: $dark_tertiary;
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 60px;
+
+        br {
+            display: none;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        width: 799px;
+        height: 494px;
+    }
+}
+
+.add-text {
+    font-family: $font;
+    color: $purple_basic;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 560px;
+    margin-right: 42px;
+
+    &__tittle {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 130%;
+        margin-bottom: 24px;
+    }
+
+    &__paragraph:nth-of-type(2) {
+        margin-bottom: 12px;
+    }
+
+    &__paragraph:nth-of-type(3) {
+        margin-bottom: 24px;
+    }
+
+    &__line {
+        margin: 0;
+        margin-bottom: 24px;
+        border: 1px solid $dark-secondary;
+        width: 40px;
+    }
+}
+
+@media (max-width: $l) {
+    .container {
+        max-width: $container-l;
+    }
+
+    .container-target {
+        margin: 60px auto;
+        min-height: 502px;
+
+        &__tittle {
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 40px;
+        }
+
+        &__img {
+            width: 462px;
+            height: 286px;
+        }
+    }
+
+    .add-text {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 462px;
+        margin-right: 20px;
+
+        &__tittle {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        &__paragraph:nth-of-type(2) {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: $m) and (min-width: 768px) {
+    .container {
+        max-width: $container-m;
+    }
+
+    .container-target {
+        margin: 0px auto;
+        padding-top: 40px;
+        max-height: 482px;
+
+        &__tittle {
+            font-size: 32px;
+            line-height: 36px;
+            margin-bottom: 32px;
+
+            br {
+                display: none;
+            }
+        }
+
+        &__content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__img {
+            width: 334px;
+            height: 206.5px;
+        }
+    }
+
+    .add-text {
+        max-height: 374px;
+        max-width: 336px;
+        overflow: auto;
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 16px;
+        margin-right: 20px;
+        scrollbar-width: 4px;
+        scrollbar-color: $dark-secondary;
+
+        &__tittle {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        &__paragraph:nth-of-type(2) {
+            margin-bottom: 12px;
+        }
+
+        &__paragraph:nth-of-type(3) {
+            margin-bottom: 24px;
+        }
+
+        &__line {
+            margin-bottom: 24px;
+        }
+    }
+
+    .add-text::-webkit-scrollbar {
+        width: 4px;
+        background-color: $dark-secondary;
+        border-radius: 20px;
+    }
+
+    .add-text::-webkit-scrollbar-track {
+        background-color: $dark-secondary;
+        border-radius: 20px;
+        -webkit-box-shadow: none;
+    }
+
+    .add-text::-webkit-scrollbar-thumb {
+        background-color: $light_basic;
+        border-radius: 20px;
+    }
+
+}
+
+@media (max-width: $s) {
+    .container {
+        max-width: $container-s;
+    }
+
+    .container-target {
+        margin: 40px auto;
+        min-height: 948px;
+
+
+        &__tittle {
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 32px;
+
+            br {
+                display: block;
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__img {
+            width: 288px;
+            height: 178px;
+        }
+
+    }
+
+    .add-text {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 288px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+
+        &__tittle {
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 16px;
+        }
+
+        &__paragraph:nth-of-type(2) {
+            margin-bottom: 10px;
+        }
+
+        &__paragraph:nth-of-type(3) {
+            margin-bottom: 16px;
+        }
+
+        &__line {
+            margin-bottom: 16px;
+            width: 40px;
+        }
+    }
+}
+
+// Конец Секция 5 - "Таргетированная реклама"
+
+// <!-- начало чёрного блока ' почему нужно использовать…..'(6) -->
+
+.why-social {
+    background-color: $purple_basic;
+
+    &__container {
+        padding: 80px 0;
+    }
+
+    &__tittle {
+        color: $dark_basic;
+        text-align: center;
+        font-family: $font;
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 40px;
+        margin-bottom: 60px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: start;
+    }
+}
+
+.reason-add {
+    width: 320px;
+
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    &__line {
+        border-top: 1px solid #8B9BAB;
+        margin: 0;
+        margin-bottom: 38px;
+    }
+
+    &__img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 28px;
+    }
+
+    &__text {
+        color: $dark_basic;
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+}
+
+//слайдер
+.why-social__slider {
+    display: none;
+}
+
+
+
+@media (max-width: $l) {
+    .container {
+        width: $container-l;
+    }
+
+    .why-social {
+        &__container {
+            padding: 40px 0 60px 0;
+        }
+
+        &__tittle {
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .reason-add {
+        width: 221px;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        &__line {
+            margin: 0;
+            margin-bottom: 18px;
+        }
+
+        &__img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (max-width: $m) {
+    .container {
+        width: $container-m;
+    }
+
+    .why-social__tittle {
+        margin-bottom: 32px;
+    }
+
+    .reason-add {
+        width: 157px;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: $s) {
+    .container {
+        width: $container-s;
+
+        .why-social__content {
+            display: none;
+        }
+    }
+
+    .why-social {
+        &__container {
+            padding: 0;
+        }
+
+        &__tittle {
+            font-size: 28px;
+            line-height: 36px;
+            padding-top: 40px;
+            margin-bottom: 32px;
+        }
+    }
+
+    // слайдер
+
+    .why-social__slider {
+        display: block;
+        padding-bottom: 40px;
+    }
+
+    #slider {
+        margin: 0 auto;
+    }
+
+    #slider .reason-add {
+        width: 288px;
+        line-height: 0;
+    }
+
+    #overflow {
+        width: 288px;
+        overflow: hidden;
+    }
+
+    #desktop:checked~#slider {
+        max-width: 288px;
+    }
+
+    #switch1:checked~#controls label:nth-child(4),
+    #switch2:checked~#controls label:nth-child(1),
+    #switch3:checked~#controls label:nth-child(2),
+    #switch4:checked~#controls label:nth-child(3) {
+        background: url('../../assets/img/template/arrow-slider.png') no-repeat;
+        rotate: -180deg;
+        float: left;
+        margin: 104px 0 0 0px;
+        display: block;
+        height: 40px;
+        width: 40px;
+    }
+
+    #switch1:checked~#controls label:nth-child(2),
+    #switch2:checked~#controls label:nth-child(3),
+    #switch3:checked~#controls label:nth-child(4),
+    #switch4:checked~#controls label:nth-child(1) {
+        background: url('../../assets/img/template/arrow-slider.png') no-repeat;
+        float: right;
+        margin: 104px 0px 0 0;
+        display: block;
+        height: 40px;
+        width: 40px;
+    }
+
+    label,
+    a {
+        cursor: pointer;
+    }
+
+    .why-social__slider input {
+        display: none;
+    }
+
+    #switch1:checked~#slides .reason-add {
+        margin-left: 0;
+    }
+
+    #switch2:checked~#slides .reason-add {
+        margin-left: -100%;
+    }
+
+    #switch3:checked~#slides .reason-add {
+        margin-left: -200%;
+    }
+
+    #switch4:checked~#slides .reason-add {
+        margin-left: -300%;
+    }
+
+    #controls {
+        margin: -25% 0 0 0;
+        width: 100%;
+        height: 50px;
+    }
+
+    #active label {
+        border-radius: 10px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: #376FFF50;
+    }
+
+    #active {
+        margin: 23% 0 0;
+        text-align: center;
+    }
+
+    #active label:hover {
+        background: #376FFF;
+        border-color: #777 !important;
+    }
+
+    #switch1:checked~#active label:nth-child(1),
+    #switch2:checked~#active label:nth-child(2),
+    #switch3:checked~#active label:nth-child(3),
+    #switch4:checked~#active label:nth-child(4) {
+        background: #376FFF;
+        border-color: #376FFF !important;
+    }
+
+    #slides .reason-add {
+        transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    }
+
+    #controls label:hover {
+        opacity: 0.6;
+    }
+
+    #controls label {
+        transition: opacity 0.2s ease-out;
+    }
+}
+// <!-- конец чёрного блока ' почему нужно использовать…..'(6) -->
+
 // section  "После определения аудитории..."
 
-// * {
-//     box-sizing: border-box;
-//     margin: 0;
-//     padding: 0;
-// }
+.objective-accordion {
+    display: flex;
+    align-items: center;
 
-// .container {
-//     max-width: $container-xl;
-//     margin: 0 auto;
-// }
+    &__container {
+        max-width: 1400px;
+        min-height: 956px;
+        margin: 80px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-// .objective-accordion {
-//     display: flex;
-//     align-items: center;
+    &__text {
+        font-family: $font;
+        font-size: 26px;
+        font-weight: 400;
+        color: $dark_tertiary;
+        margin-bottom: 40px;
+        line-height: 130%;
+    }
+}
 
-//     &__container {
-//         max-width: 1400px;
-//         min-height: 956px;
-//         margin: 80px auto;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         justify-content: center;
-//     }
+// Дизайн аккордеона
+.accordion {
+    &__line {
+        border: none;
+        border-top: 1px solid #C1D3DE;
+        margin: 0;
+    }
 
-//     &__text {
-//         font-family: $font;
-//         font-size: 26px;
-//         font-weight: 400;
-//         color: $dark_tertiary;
-//         margin-bottom: 40px;
-//         line-height: 130%;
-//     }
-// }
+    &__line:not(:last-child) {
+        margin-bottom: 20px;
+    }
 
-// // Дизайн аккордеона
-// .accordion {
-//     &__line {
-//         border: none;
-//         border-top: 1px solid #C1D3DE;
-//         margin: 0;
-//     }
+    &__spoiler {
+        padding-left: 44px;
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 700;
+        color: $purple_basic;
+        line-height: 28px;
+        max-height: 0;
+        overflow: hidden;
+    }
 
-//     &__line:not(:last-child) {
-//         margin-bottom: 20px;
-//     }
+    &__text {
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 400;
+        color: $purple_basic;
+        line-height: 28px;
 
-//     &__spoiler {
-//         padding-left: 44px;
-//         font-family: $font;
-//         font-size: 20px;
-//         font-weight: 700;
-//         color: $purple_basic;
-//         line-height: 28px;
-//         max-height: 0;
-//         overflow: hidden;
-//     }
+        &:first-child {
+            margin-bottom: 8px;
+        }
 
-//     &__text {
-//         font-family: $font;
-//         font-size: 20px;
-//         font-weight: 400;
-//         color: $purple_basic;
-//         line-height: 28px;
+        &:last-child {
+            margin-bottom: 20px;
+        }
 
-//         &:first-child {
-//             margin-bottom: 8px;
-//         }
+    }
 
-//         &:last-child {
-//             margin-bottom: 20px;
-//         }
+    &__subtittle {
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 700;
+        color: $purple_basic;
+        line-height: 28px;
+        margin-bottom: 4px;
+    }
 
-//     }
+    &__block {
+        list-style-type: none;
+        width: 100%;
 
-//     &__subtittle {
-//         font-family: $font;
-//         font-size: 20px;
-//         font-weight: 700;
-//         color: $purple_basic;
-//         line-height: 28px;
-//         margin-bottom: 4px;
-//     }
+        label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-family: $font;
+            font-size: 20px;
+            font-weight: 700;
+            color: $dark_tertiary;
+            margin-bottom: 20px;
+        }
 
-//     &__block {
-//         list-style-type: none;
-//         width: 100%;
+        label::before {
+            content: url(../../assets/img/template/circle-plus.png);
+            margin-right: 20px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
 
-//         label {
-//             display: flex;
-//             align-items: center;
-//             cursor: pointer;
-//             font-family: $font;
-//             font-size: 20px;
-//             font-weight: 700;
-//             color: $dark_tertiary;
-//             margin-bottom: 20px;
-//         }
+input[type="checkbox"] {
+    display: none;
+}
 
-//         label::before {
-//             content: url(../../assets/img/template/circle-plus.png);
-//             margin-right: 20px;
-//             width: 24px;
-//             height: 24px;
-//         }
-//     }
-// }
+.accordion {
 
-// input[type="checkbox"] {
-//     display: none;
-// }
+    input[type="checkbox"]:checked+label+.accordion__spoiler {
+        max-height: 400px;
+    }
 
-// .accordion {
+    input[type="checkbox"]:checked+label::before {
+        content: url(../../assets/img/template/circle-minus.png);
+        width: 24px;
+        height: 24px;
+    }
+}
 
-//     input[type="checkbox"]:checked+label+.accordion__spoiler {
-//         max-height: 400px;
-//     }
+@media (max-width: $l) {
+    .container {
+        width: $container-l;
+    }
 
-//     input[type="checkbox"]:checked+label::before {
-//         content: url(../../assets/img/template/circle-minus.png);
-//         width: 24px;
-//         height: 24px;
-//     }
-// }
+    .objective-accordion {
+        display: flex;
+        align-items: center;
 
-// @media (max-width: $l) {
-//     .container {
-//         width: $container-l;
-//     }
+        &__container {
+            max-width: 944px;
+            min-height: 800px;
+            margin: 60px auto;
+        }
 
-//     .objective-accordion {
-//         display: flex;
-//         align-items: center;
+        &__text {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
 
-//         &__container {
-//             max-width: 944px;
-//             min-height: 800px;
-//             margin: 60px auto;
-//         }
+    .accordion {
+        &__line:not(:last-child) {
+            margin-bottom: 16px;
+        }
 
-//         &__text {
-//             font-size: 18px;
-//             line-height: 26px;
-//         }
-//     }
+        &__spoiler {
+            font-size: 16px;
+            line-height: 24px;
+        }
 
-//     .accordion {
-//         &__line:not(:last-child) {
-//             margin-bottom: 16px;
-//         }
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
 
-//         &__spoiler {
-//             font-size: 16px;
-//             line-height: 24px;
-//         }
+            &:last-child {
+                margin-bottom: 16px;
+            }
+        }
 
-//         &__text {
-//             font-size: 16px;
-//             line-height: 24px;
+        &__subtittle {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 4px;
+        }
 
-//             &:last-child {
-//                 margin-bottom: 16px;
-//             }
-//         }
+        &__block {
+            label {
+                font-size: 16px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
 
-//         &__subtittle {
-//             font-size: 16px;
-//             line-height: 24px;
-//             margin-bottom: 4px;
-//         }
+@media (max-width: $m) {
 
-//         &__block {
-//             label {
-//                 font-size: 16px;
-//                 margin-bottom: 16px;
-//             }
-//         }
-//     }
-// }
+    .container {
+        max-width: $container-m;
+    }
 
-// @media (max-width: $m) {
+    .objective-accordion {
+        &__container {
+            min-height: 890px;
+            margin: 40px auto;
+        }
 
-//     .container {
-//         max-width: $container-m;
-//     }
+        &__text {
+            margin-bottom: 32px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
 
-//     .objective-accordion {
-//         &__container {
-//             min-height: 890px;
-//             margin: 40px auto;
-//         }
+    .accordion {
 
-//         &__text {
-//             margin-bottom: 32px;
-//             font-size: 18px;
-//             line-height: 26px;
-//         }
-//     }
+        &__line:not(:last-child) {
+            margin-bottom: 16px;
+        }
 
-//     .accordion {
+        &__spoiler {
+            padding-left: 44px;
+            font-size: 16px;
+            line-height: 24px;
+        }
 
-//         &__line:not(:last-child) {
-//             margin-bottom: 16px;
-//         }
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
 
-//         &__spoiler {
-//             padding-left: 44px;
-//             font-size: 16px;
-//             line-height: 24px;
-//         }
+            &:last-child {
+                margin-bottom: 16px;
+            }
 
-//         &__text {
-//             font-size: 16px;
-//             line-height: 24px;
+        }
 
-//             &:last-child {
-//                 margin-bottom: 16px;
-//             }
+        &__subtittle {
+            font-size: 16px;
+            line-height: 24px;
+        }
 
-//         }
+        &__block {
 
-//         &__subtittle {
-//             font-size: 16px;
-//             line-height: 24px;
-//         }
+            label {
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+        }
 
-//         &__block {
+        input[type="checkbox"]:checked+label+.accordion__spoiler {
+            max-height: 700px;
+        }
+    }
+}
 
-//             label {
-//                 font-size: 16px;
-//                 margin-bottom: 12px;
-//             }
-//         }
+@media (max-width: $s) {
 
-//         input[type="checkbox"]:checked+label+.accordion__spoiler {
-//             max-height: 700px;
-//         }
-//     }
-// }
+    .container {
+        max-width: $container-s;
+    }
 
-// @media (max-width: $s) {
+    .objective-accordion {
+        &__container {
+            min-height: 1198px;
+            max-width: 288px;
+        }
 
-//     .objective-accordion {
-//         &__container {
-//             min-height: 1198px;
-//             max-width: 288px;
-//         }
+        &__text {
+            margin-bottom: 32px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
 
-//         &__text {
-//             margin-bottom: 32px;
-//             font-size: 18px;
-//             line-height: 26px;
-//         }
-//     }
+    .accordion {
+        &__line:not(:last-child) {
+            margin-bottom: 12px;
+        }
 
-//     .accordion {
-//         &__line:not(:last-child) {
-//             margin-bottom: 12px;
-//         }
+        &__spoiler {
+            padding-left: 32px;
+        }
 
-//         &__spoiler {
-//             padding-left: 32px;
-//         }
+        &__text {
+            &:first-child {
+                margin-bottom: 4px;
+            }
+        }
 
-//         &__text {
-//             &:first-child {
-//                 margin-bottom: 4px;
-//             }
-//         }
+        &__subtittle {
+            margin-bottom: 0px;
+        }
 
-//         &__subtittle {
-//             margin-bottom: 0px;
-//         }
+        &__block {
+            label {
+                margin-bottom: 12px;
+            }
 
-//         &__block {
-//             label {
-//                 margin-bottom: 12px;
-//             }
-
-//             label::before {
-//                 margin-right: 8px;
-//             }
-//         }
-//     }
-// }
+            label::before {
+                margin-right: 8px;
+            }
+        }
+    }
+}
 
 // конец  section  "После определения аудитории..."
 

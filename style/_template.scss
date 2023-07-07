@@ -280,25 +280,4 @@
     text-decoration: underline;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0 auto;
-    font-family: $font;
-}
 
-
-@mixin btn ($height, $bg, $color) {
-    width:279px;
-    height:$height;
-    border-style:solid;
-    border-color: $bg;
-    border-width:1px;
-    border-radius: 12px;
-    background:$bg;
-    color: $color;
-}
-
-h2 {
-    font-size: 38px;
-    font-weight: 900;
-    }
