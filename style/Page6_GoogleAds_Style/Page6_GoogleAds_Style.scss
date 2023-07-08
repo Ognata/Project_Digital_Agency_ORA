@@ -270,6 +270,7 @@
         }
     }
 }
+// <!-- конец 2й блок, с фоткой компьютеров 'Вы хотите улучшить результаты…' -->
 
 // <!-- 3й блок_Кому мы показываем -->
 .container{
@@ -359,7 +360,7 @@
         }
     }
 }
-// <!-- 3й блок_Кому мы показываем -->
+// <!-- конец 3й блок_Кому мы показываем -->
 
 // 4й блок Стоимость услуг
 
@@ -610,11 +611,41 @@
 //<!-- 5й блок_Что такое реклама -->
 .ad-in-google__container {
     min-height: 2600px;
-    @media (max-width:$l) {
-        min-height: 2045px;
+
+    #btn1,
+    #btn2,
+    #btn3,
+    #btn4 {
+        display: none;
+
+        @media (max-width:$s) {
+            display: block;
+            color: $bright_basic;
+            font-family: $font;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
     }
+
+    #more1,
+    #more2,
+    #more3,
+    #more4,
+    #more5,
+    #more6,
+    #more7,
+    #more8,
+    #more9 {
+        @media (max-width:$s) {
+            display: none;
+        }
+    }
+
     @media (max-width:$l) {
-        min-height: 2036px;
+        min-height: 1911px;
     }
 
     h2 {
@@ -639,7 +670,6 @@
 
         @media (max-width:$l) {
             font-size: 18px;
-            margin: 24px 0;
         }
     }
 
@@ -655,6 +685,7 @@
             margin-bottom: 16px;
         }
     }
+
     .ad-in-google__item {
         display: flex;
         column-gap: 20px;
@@ -665,7 +696,7 @@
         @media (max-width:$s) {
             flex-direction: column;
             flex-wrap: wrap;
-            margin-bottom: 24px;
+            margin-bottom: 32px;
         }
     }
 
@@ -686,6 +717,7 @@
 
         @media (max-width:$s) {
             width: 288px;
+            margin-bottom: 24px;
         }
 
         .ad-in-google__text-block {
@@ -693,9 +725,10 @@
         }
     }
 }
-//<!-- Конец 5й блок_Что такое реклама -->
 
-// начало чёрного блока (6) Что мы предлагаем
+//<!-- конец 5й блок_Что такое реклама -->
+
+// 6 блок черный Что мы предлагаем
 
 .offer {
     background-color: $purple_basic;
@@ -966,9 +999,9 @@
         transition: opacity 0.2s ease-out;
     }
 }
+// конец 6 блок черный Что мы предлагаем
 
-// конец чёрного блока (6) Что мы предлагаем
-// 7 блок, этапы работы 
+// 7 блок, этапы работы
 .work-phase {
     &__container {
         padding: 80px 0 77px 0;
@@ -1364,6 +1397,96 @@
     }
 }
 
-
-
 // конец 7 блока
+
+//<!-- 8й блок_Что вы получаете в результате -->
+.results {
+    background-image: url(../../assets/img/Page6_GoogleAds_img/background/bg_lightblue.png);
+}
+
+.results__container {
+    min-height: 560px;
+
+    @media (max-width:$l) {
+        min-height: 470px;
+    }
+
+    @media (max-width:$m) {
+        min-height: 464px;
+    }
+
+    @media (max-width:$s) {
+        min-height: 766px;
+    }
+
+    .results__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 60px;
+
+        @media (max-width:$l) {
+            gap: 40px;
+        }
+
+        @media (max-width:$l) {
+            gap: 32px;
+        }
+
+        @media (max-width:$s) {
+            grid-template-columns: 1fr;
+            grid-template-rows: max-content;
+            row-gap: 20px;
+        }
+    }
+
+    h2 {
+        font-family: $font;
+        font-size: 38px;
+        font-weight: 900;
+        color: $purple_basic;
+        text-align: center;
+        padding: 80px 0 70px 0;
+
+        @media (max-width:$l) {
+            font-size: 28px;
+            padding: 50px 0 40px 0;
+        }
+
+        @media (max-width:$l) {
+            padding: 45px 0 35px 0;
+        }
+    }
+
+    p {
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 700;
+        color: $purple_basic;
+    }
+
+    @media (max-width:$l) {
+        font-size: 16px;
+    }
+}
+
+.results__item {
+    display: flex;
+    align-items: center;
+
+    @media (max-width:$s) {
+        align-items: flex-start;
+    }
+}
+
+.results__image {
+    width: 60px;
+
+    @media (max-width:$s) {
+        width: 48px;
+    }
+}
+
+//<!-- 8й блок_Что вы получаете в результате -->
+
+//Блок 9_Клиенты, которые нам доверяют (отдельный файл _template_OurClients.scss)
