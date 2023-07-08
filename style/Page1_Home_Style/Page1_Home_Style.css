@@ -1089,6 +1089,11 @@ body {
     grid-area: 1/1/2/2;
   }
 }
+@media (max-width: 767px) {
+  .footer__wrapper .footer-contacts .footer__phone .phone-text {
+    margin-top: 40px;
+  }
+}
 @media (max-width: 1023px) {
   .footer__wrapper .footer-contacts .footer__phone .adress-text {
     grid-row: 6/7;

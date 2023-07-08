@@ -126,6 +126,9 @@ body {
                 @media (max-width: $m) {
                     grid-area: 1/1/2/2;
                 }
+                @media (max-width: $s) {
+                    margin-top: 40px;
+                }
             }
             .adress-text {
                 @media (max-width: $m) {

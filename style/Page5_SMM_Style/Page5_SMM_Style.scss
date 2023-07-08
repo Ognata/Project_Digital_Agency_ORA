@@ -37,6 +37,10 @@
             grid-template-columns: 1fr;
         }
 
+        .section__image {
+            max-width: 100%;
+        }
+
         .section__title {
             margin-bottom: 40px;
             text-align: left;
@@ -92,8 +96,7 @@
     }
 }
 
-
-//section content plan
+//блок 3 section content plan
 
 .section_name_content-plan {
 
@@ -156,7 +159,9 @@
     }
 }
 
-//section communication structure
+//конец блок3 section content plan
+
+//блок 4 section communication structure
 
 .section_name_communication {
     background-color: $lightgrey_basic;
@@ -177,53 +182,139 @@
         padding: 10px 16px;
     }
 }
+//конец блок 4 section communication structure
+
+// //section content plan
+
+// .section_name_content-plan {
+
+//     .section__table {
+
+//         @media (max-width:$m) {
+//             display: none;
+//         }
+//     }
+
+//     .section__table_mobile {
+//         @media (max-width:$m) {
+//             display: table;
+//         }
+//     }
+// }
+
+// .table_section_content-plan {
+
+//     @media (max-width:$s) {
+//         border-radius: 0;
+//     }
+
+//     .table__row:nth-of-type(2n),
+//     .table__row_style_dark {
+//         background-color: $lightgrey_basic;
+//         background-image: none;
+//     }
+
+//     .table__cell:not(.table__cell_head) {
+//         padding-top: 12px;
+//     }
+
+//     .table__cell {
+//         @media (max-width:$l) {
+//             padding-left: 10px;
+//         }
+
+//         @media (max-width:$m) {
+//             padding: 15px 20px 20px 15px;
+//         }
+//     }
+
+//     .table__cell-text {
+//         margin: 4px 0;
+//     }
+
+//     .table__cell-grid {
+//         display: grid;
+//         grid-template-columns: repeat(4, 1fr);
+//         gap: 15px;
+
+//         @media (max-width:$s) {
+//             grid-template-columns: repeat(2, 1fr);
+//         }
+
+//         .table__cell-grid-item:last-of-type {
+//             grid-column: 1/-1;
+//         }
+//     }
+// }
+
+// //section communication structure
+
+// .section_name_communication {
+//     background-color: $lightgrey_basic;
+//     background-image: url(../../assets/img/template/light-blue-bg.svg);
+// }
+
+// .table_section_communication .table__cell {
+
+//     @media (max-width:$l) {
+//         padding: 20px 10px;
+//     }
+
+//     @media (max-width:$m) {
+//         padding-right: 0;
+//     }
+
+//     @media (max-width:$s) {
+//         padding: 10px 16px;
+//     }
+// }
 
 
 
 
-.section_name_advertising-goals {
-    background-color: $lightgrey_basic;
-    background-image: url(../../assets/img/template/light-blue-bg.svg);
+// .section_name_advertising-goals {
+//     background-color: $lightgrey_basic;
+//     background-image: url(../../assets/img/template/light-blue-bg.svg);
 
-    .section__text {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 920px;
+//     .section__text {
+//         margin-left: auto;
+//         margin-right: auto;
+//         max-width: 920px;
 
-        @media (max-width:$l) {
-            max-width: none;
-        }
-    }
-}
+//         @media (max-width:$l) {
+//             max-width: none;
+//         }
+//     }
+// }
 
-.section_name_cost-of-services {
-    background-color: $lightgrey_basic;
-    background-image: url(../../assets/img/template/light-blue-bg.svg);
+// .section_name_cost-of-services {
+//     background-color: $lightgrey_basic;
+//     background-image: url(../../assets/img/template/light-blue-bg.svg);
 
-    .section__title {
-        margin-bottom: 60px;
+//     .section__title {
+//         margin-bottom: 60px;
 
-        @media (max-width:$l) {
-            margin-bottom: 40px;
-        }
+//         @media (max-width:$l) {
+//             margin-bottom: 40px;
+//         }
 
-        @media (max-width:$m) {
-            margin-bottom: 32px;
-        }
-    }
-}
+//         @media (max-width:$m) {
+//             margin-bottom: 32px;
+//         }
+//     }
+// }
 
-.section_name_cost-of-services .section__infoblock {
-    margin-top: 60px;
+// .section_name_cost-of-services .section__infoblock {
+//     margin-top: 60px;
 
-    @media (max-width:$l) {
-        margin-top: 40px;
-    }
+//     @media (max-width:$l) {
+//         margin-top: 40px;
+//     }
 
-    @media (max-width:$m) {
-        margin-top: 32px;
-    }
-}
+//     @media (max-width:$m) {
+//         margin-top: 32px;
+//     }
+// }
 
 // Секция 5 - "Таргетированная реклама"
 
@@ -471,7 +562,7 @@
 
 // Конец Секция 5 - "Таргетированная реклама"
 
-// <!-- начало чёрного блока ' почему нужно использовать…..'(6) -->
+// <!-- Блок 6 черный ' почему нужно использовать…..' -->
 
 .why-social {
     background-color: $purple_basic;
@@ -730,9 +821,255 @@
         transition: opacity 0.2s ease-out;
     }
 }
-// <!-- конец чёрного блока ' почему нужно использовать…..'(6) -->
+// <!-- Конец Блок 6 черный ' почему нужно использовать…..' -->
 
-// section  "После определения аудитории..."
+// 7 блок Настройки таргетинга
+.container {
+    max-width: $container-xl;
+    margin: 0 auto;
+
+    @media (max-width:$l) {
+        max-width: $container-l;
+    }
+
+    @media (max-width: $m) {
+        max-width: $container-m;
+    }
+
+    @media (max-width: $s) {
+        max-width: $container-s;
+    }
+}
+
+.target-settings__container{
+    margin: 80px auto;
+    @media (max-width:$l) {
+        margin: 60px auto;
+    }
+    @media (max-width:$m) {
+        margin: 40px auto;
+    }
+    h2{
+        font-family: $font;
+        font-size: 38px;
+        font-weight: 900;
+        color: $purple_basic;
+        @media (max-width:$l) {
+            font-size: 28px;
+        }
+    }
+    h3{
+        font-family: $font;
+        font-size: 26px;
+        font-weight: 700;
+        color: $purple_basic;
+        @media (max-width:$l) {
+            font-size: 18px;
+        }
+    }
+    h4{
+        font-family: $font;
+        font-size: 26px;
+        font-weight: 400;
+        color: $purple_basic;
+        @media (max-width:$l) {
+            font-size: 18px;
+        }
+    }
+    h5{
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 700;
+        color: $purple_basic;
+        @media (max-width:$l) {
+            font-size: 16px;
+        }
+    }
+    p{
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 400;
+        color: $purple_basic;
+        @media (max-width:$l) {
+            font-size: 16px;
+        }
+    }
+    img{
+        width: 24px;
+        height: 24px;
+    }
+    .target-settings__fb-inst{
+        h2{
+            margin-bottom: 40px;
+            @media (max-width:$l) {
+                margin-bottom: 24px;
+            }
+            @media (max-width:$l) {
+                margin-bottom: 16px;
+            }
+        }
+        p{
+            margin-bottom: 60px;
+            @media (max-width:$m) {
+                margin-bottom: 32px;
+            }
+        }
+    }
+    .target-settings__specific-parameters{
+        margin-bottom: 80px;
+        @media (max-width:$l) {
+            margin-bottom: 40px;
+        }
+        @media (max-width:$m) {
+            margin-bottom: 16px;
+        }
+        h3{
+            margin-bottom: 24px;
+            @media (max-width:$l) {
+                margin-bottom: 16px;
+            }
+        }
+        .target-settings__parameters{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 40px;
+            @media (max-width:$l) {
+                column-gap: 20px;
+            }
+            @media (max-width:$s) {
+                display: grid;
+                grid-template-columns: 1fr;
+                @media (max-width:$s) {
+                    row-gap: 4px;
+                }
+            }
+            }
+            .target-settings__column{
+                display: grid;
+                row-gap: 20px;
+                @media (max-width:$s) {
+                    row-gap: 4px;
+                }
+            .tg-parameter{
+                display: flex;
+                p{
+                    padding-left: 20px;
+                    @media (max-width:$s) {
+                        padding-left: 9px;
+                    }
+                }
+                .tg-parameter__text-version{
+                    font-size: 16px;
+                    @media (max-width:$s) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    }
+    .target-settings__ad-config{
+        h2{
+            margin-bottom: 40px;
+            @media (max-width:$l) {
+                margin-bottom: 24px;
+            }
+            @media (max-width:$l) {
+                margin-bottom: 16px;
+            }
+        }
+        p{
+            margin-bottom: 60px;
+            @media (max-width:$l) {
+                margin-bottom: 32px;
+            }
+        }
+    }
+    .target-settings__three-goals{
+        h3{
+            margin-bottom: 24px;
+        }
+        .target-settings__ad-tagerts{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-bottom: 40px;
+            @media (max-width:$l) {
+                margin-bottom: 20px;
+            }
+            @media (max-width:$s) {
+                display: grid;
+                grid-template-columns: 1fr;
+                row-gap: 4px;
+                margin-bottom: 24px;
+            }
+            .ad-target{
+                display: flex;
+                p{
+                    padding-left: 20px;
+                    @media (max-width:$s) {
+                    padding-left: 9px;
+                    }
+                }
+            }
+        }
+    }
+    .target-settings__commitment{
+        p{
+            margin-bottom: 40px;
+            @media (max-width:$l) {
+                margin-bottom: 20px;
+            }
+            @media (max-width:$s) {
+                margin-bottom: 24px;
+            }
+        }
+        h4{
+            margin-bottom: 40px;
+            @media (max-width:$l) {
+                margin-bottom: 20px;
+            }
+            @media (max-width:$s) {
+                margin-bottom: 24px;
+            }
+        }
+    }
+    .target-settings__example{
+        background-color: $lightgrey_basic;
+        border: 1px solid $light_basic;
+        border-radius: 12px;
+        padding: 40px;
+        @media (max-width:$l) {
+            padding: 20px;
+        }
+        h5{
+            margin-bottom: 16px;
+            @media (max-width:$l) {
+                margin-bottom: 8px;
+        }
+    }
+}
+// 7 блок Настройки таргетинга
+
+// блок 8 Цели рекламной компании
+
+.section_name_advertising-goals {
+    background-color: $lightgrey_basic;
+    background-image: url(../../assets/img/template/light-blue-bg.svg);
+
+    .section__text {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 920px;
+
+        @media (max-width:$l) {
+            max-width: none;
+        }
+    }
+}
+
+// конец блок 8 Цели рекламной компании
+
+// Блок 9 section  "После определения аудитории..."
 
 .objective-accordion {
     display: flex;
@@ -1013,110 +1350,9 @@ input[type="checkbox"] {
     }
 }
 
-// конец  section  "После определения аудитории..."
+// конец блок 9 section  "После определения аудитории..."
 
-//section content plan
-
-.section_name_content-plan {
-
-    .section__table {
-
-        @media (max-width:$m) {
-            display: none;
-        }
-    }
-
-    .section__table_mobile {
-        @media (max-width:$m) {
-            display: table;
-        }
-    }
-}
-
-.table_section_content-plan {
-
-    @media (max-width:$s) {
-        border-radius: 0;
-    }
-
-    .table__row:nth-of-type(2n),
-    .table__row_style_dark {
-        background-color: $lightgrey_basic;
-        background-image: none;
-    }
-
-    .table__cell:not(.table__cell_head) {
-        padding-top: 12px;
-    }
-
-    .table__cell {
-        @media (max-width:$l) {
-            padding-left: 10px;
-        }
-
-        @media (max-width:$m) {
-            padding: 15px 20px 20px 15px;
-        }
-    }
-
-    .table__cell-text {
-        margin: 4px 0;
-    }
-
-    .table__cell-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
-
-        @media (max-width:$s) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .table__cell-grid-item:last-of-type {
-            grid-column: 1/-1;
-        }
-    }
-}
-
-//section communication structure
-
-.section_name_communication {
-    background-color: $lightgrey_basic;
-    background-image: url(../../assets/img/template/light-blue-bg.svg);
-}
-
-.table_section_communication .table__cell {
-
-    @media (max-width:$l) {
-        padding: 20px 10px;
-    }
-
-    @media (max-width:$m) {
-        padding-right: 0;
-    }
-
-    @media (max-width:$s) {
-        padding: 10px 16px;
-    }
-}
-
-
-
-
-.section_name_advertising-goals {
-    background-color: $lightgrey_basic;
-    background-image: url(../../assets/img/template/light-blue-bg.svg);
-
-    .section__text {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 920px;
-
-        @media (max-width:$l) {
-            max-width: none;
-        }
-    }
-}
+// блок 10 Стоимость услуг
 
 .section_name_cost-of-services {
     background-color: $lightgrey_basic;
@@ -1147,3 +1383,6 @@ input[type="checkbox"] {
     }
 }
 
+// конец блок 10 Стоимость услуг
+
+//Блок 11_Клиенты, которые нам доверяют (отдельный файл _template_OurClients.scss)
