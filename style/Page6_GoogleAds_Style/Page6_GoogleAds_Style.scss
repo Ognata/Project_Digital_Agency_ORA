@@ -14,8 +14,9 @@
     // border: 1px solid
 }
 
-// <!-- 2блок, с фоткой компьютеров 'Вы хотите улучшить результаты…' -->
+//Блок 1 header (отдельный файл _template_header.scss)
 
+// Блок 2 'Вы хотите улучшить результаты…' -->
 .container {
     width: $container-xl;
 }
@@ -270,9 +271,9 @@
         }
     }
 }
-// <!-- конец 2й блок, с фоткой компьютеров 'Вы хотите улучшить результаты…' -->
+// Конец Блок 2 'Вы хотите улучшить результаты…'
 
-// <!-- 3й блок_Кому мы показываем -->
+// Блок 3 Кому мы показываем
 .container{
     max-width: $container-xl;
     margin: 0 auto;
@@ -296,17 +297,17 @@
     flex-direction: column;
     justify-content: space-between;
     h2{
-       font-family: $font;
-       font-size: 38px;
-       font-weight: 900;
-       color: $purple_basic;
-       margin-bottom: 55px;
+    font-family: $font;
+    font-size: 38px;
+    font-weight: 900;
+    color: $purple_basic;
+    margin-bottom: 55px;
     }
     p{
-        font-family: $font;
-       font-size: 20px;
-       font-weight: 700;
-       color: $purple_basic;
+    font-family: $font;
+    font-size: 20px;
+    font-weight: 700;
+    color: $purple_basic;
     }
     @media (max-width:$l) {
         max-width: $container-l;
@@ -360,10 +361,9 @@
         }
     }
 }
-// <!-- конец 3й блок_Кому мы показываем -->
+// Конец Блок 3 Кому мы показываем
 
-// 4й блок Стоимость услуг
-
+// Блок 4 Стоимость услуг
 .section_name_gads-cost-of-service {
     background-image: url(../../assets/img/template/background-graph-paper.jpg);
 
@@ -605,10 +605,9 @@
     background-image: none;
     background-color: $lightgrey_basic;
 }
+// Конец Блок 4 Стоимость услуг
 
-// конец 4й блок стоимость услуг
-
-//<!-- 5й блок_Что такое реклама -->
+// Блок 5 Что такое реклама
 .ad-in-google__container {
     min-height: 2600px;
 
@@ -725,10 +724,9 @@
         }
     }
 }
+// Конец Блок 5 Что такое реклама
 
-//<!-- конец 5й блок_Что такое реклама -->
-
-// 6 блок черный Что мы предлагаем
+// Блок 6 черный Что мы предлагаем
 
 .offer {
     background-color: $purple_basic;
@@ -999,9 +997,9 @@
         transition: opacity 0.2s ease-out;
     }
 }
-// конец 6 блок черный Что мы предлагаем
+// Конец Блок 6 черный Что мы предлагаем
 
-// 7 блок, этапы работы
+// Блок 7 Этапы работы
 .work-phase {
     &__container {
         padding: 80px 0 77px 0;
@@ -1396,10 +1394,9 @@
         transition: opacity 0.2s ease-out;
     }
 }
+// Конец Блок 7 Этапы работы
 
-// конец 7 блока
-
-//<!-- 8й блок_Что вы получаете в результате -->
+//Блок 8 Что вы получаете в результате
 .results {
     background-image: url(../../assets/img/Page6_GoogleAds_img/background/bg_lightblue.png);
 }
@@ -1486,7 +1483,8 @@
         width: 48px;
     }
 }
+//Конец Блок 8 Что вы получаете в результате
 
-//<!-- 8й блок_Что вы получаете в результате -->
+//Блок 9 Клиенты, которые нам доверяют (отдельный файл _template_OurClients.scss)
 
-//Блок 9_Клиенты, которые нам доверяют (отдельный файл _template_OurClients.scss)
+//Блок 10 footer (отдельный файл _template_footer.scss)

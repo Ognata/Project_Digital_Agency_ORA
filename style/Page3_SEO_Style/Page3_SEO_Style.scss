@@ -13,6 +13,119 @@
     padding: 0;
 }
 
+//Блок 1 header (отдельный файл _template_header.scss)
+
+//Блок 2 Поисковая оптимизация. Что мы предлагаем?
+.searching-optimization{
+    background-image: url(../../assets/img/template/background-graph-paper.jpg);
+    .searching-optimization__container {
+        min-height: 670px;
+        padding: 80px 0;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        @media (max-width: $l) {
+            min-height: 570px;
+            padding: 60px 0;
+        }
+        @media (max-width: $m) and (min-width: $s) {
+            min-height: 414px;
+            padding-top: 40px;
+            padding-bottom: 0;
+            gap: 5px;
+            overflow: hidden;
+            .searching-optimization__text-block::-webkit-scrollbar {
+                width: 4px;
+                background-color: $dark-secondary;
+                border-radius: 20px;
+            }
+            .searching-optimization__text-block::-webkit-scrollbar-track {
+                background-color: $dark-secondary;
+                border-radius: 20px;
+                -webkit-box-shadow: none;
+            }
+            .searching-optimization__text-block::-webkit-scrollbar-thumb {
+                background-color: $light_basic;
+                border-radius: 20px;
+            }
+        }
+        @media (max-width: $s) {
+            flex-direction: column;
+            min-height: 962px;
+        }
+        .searching-optimization__image-block{
+            flex-basis: 50%;
+            max-width: 680px;
+            height: 100%;
+            .item-img{
+                width: 100%;
+                @media (max-width: $l) {
+                    max-width: 462px;
+                    padding: 60px 0;
+                }
+                @media (max-width: $m) {
+                    align-items: center;
+                    max-width: 334px;
+                    padding: 40px 0;
+                }
+                @media (max-width: $s) {
+                    flex-direction: column;
+                    flex-basis: 100%;
+                    max-width: 288px;
+                    padding: 0;
+                }
+            }
+        }
+        .searching-optimization__text-block{
+            flex-basis: 50%;
+            max-width: 680px;
+            height: 100%;
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 40px;
+            height: 100%;
+            color: $dark_tertiary;
+            @media (max-width: $m) and (min-width: $s){
+                max-width: 314px;
+                height: 354px;
+                gap: 10px;
+                padding-right: 10px;
+                overflow: hidden;
+                overflow-y: scroll;
+            }
+            .searching-optimization__border-text{
+                background-color: $bg_light-beige;
+                border: 1px solid $dark_secondary;
+                border-radius: 12px;
+                padding: 30px;
+                @media (max-width: $l) {
+                    padding: 16px;
+                }
+            }
+            h2 {
+                line-height: 40px;
+                @media (max-width: $l) {
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+            }
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 28px;
+                @media (max-width: $l) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+//конец Блок 2 Поисковая оптимизация. Что мы предлагаем?
+
+// Блок 3 с аккордеоном "Как мы работаем?"
 .h2 {
     font-family: $font;
     font-size: 38px;
@@ -277,4 +390,500 @@ input[type="checkbox"] {
         }
     }
 }
+// Конец Блок 3 с аккордеоном "Как мы работаем?"
 
+//Блок 4 Стоимость услуг (таблица)
+.price__container {
+    min-height: 733px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $l) {
+        min-height: 629px;
+        padding: 0;
+    }
+    @media (max-width: $m) {
+        min-height: 637px;
+    }
+    @media (max-width: $s) {
+        min-height: 753px;
+    }
+    .price__title {
+        text-align: center;
+        padding-bottom: 40px;
+        color: $dark_tertiary;
+        @media (max-width: $l) {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+    .price__table{
+        margin: 0;
+        border: 1px solid $dark_secondary;
+        border-radius: 12px;
+        color: $purple_basic;
+        @media (max-width: $s) {
+            margin-bottom: 40px;
+        }
+        .table__body{
+            min-height: 493px;
+            width: 100%;
+            @media (max-width: $m) {
+                min-height: 529px;
+            }
+            @media (max-width: $s) {
+                min-height: 645px;
+            }
+            border-color: $dark_secondary;
+            tr:nth-child(even) {background: $very_light_grey_blue};
+            border-collapse: collapse;
+            font-size: 20px;
+            line-height: 28px;
+            @media (max-width: $l) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            @media (max-width: $s) {
+                font-size: 12px;
+                line-height: 16px;
+            }
+            th {
+                font-weight: 700;
+                text-align: start;
+                padding-left: 20px;
+                @media (max-width: $l) {
+                    padding-left: 10px;
+                }
+                @media (max-width: $s) {
+                    padding-left: 5px;
+                }
+            }
+            td {
+                font-weight: 400;
+                padding-left: 20px;
+                @media (max-width: $l) {
+                    padding-left: 10px;
+                }
+                @media (max-width: $s) {
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}
+//Конец Блок 4 Стоимость услуг (таблица)
+
+//Блок 5 Чем SEO отличается от других инструментов продвижения?
+.seo-differences {
+    background-color: $purple_basic;
+
+    .seo-differences__container {
+        min-height: 822px;
+        padding-top: 80px;
+
+        @media (max-width: $l) {
+            min-height: 718px;
+            padding-top: 60px;
+        }
+
+        @media (max-width: $m) {
+            min-height: 852px;
+            padding-top: 40px;
+        }
+
+        @media (max-width: $s) {
+            min-height: 874px;
+        }
+
+        .seo-differences__title {
+            color: $dark_basic;
+            margin-bottom: 60px;
+            text-align: center;
+            line-height: 40px;
+
+            @media (max-width: $l) {
+                font-size: 28px;
+                line-height: 36px;
+                margin-bottom: 40px;
+            }
+
+            @media (max-width: $m) {
+                margin-bottom: 32px;
+            }
+        }
+
+        .seo-differences__cards {
+            display: flex;
+            column-gap: 40px;
+
+            @media (max-width: $l) {
+                column-gap: 20px;
+            }
+
+            @media (max-width: $s) {
+                display: none;
+            }
+
+            .card {
+                max-width: 440px;
+                min-height: 562px;
+                width: 100%;
+                border-top: 1px solid $light_basic;
+                display: flex;
+                flex-direction: column;
+
+                @media (max-width: $l) {
+                    max-width: 301px;
+                    min-height: 522px;
+                }
+
+                @media (max-width: $m) {
+                    max-width: 216px;
+                    min-height: 668px;
+                }
+
+                .card__icon {
+                    padding: 40px 0;
+
+                    @media (max-width: $l) {
+                        padding: 18px 0;
+                    }
+                }
+
+                .card__title {
+                    font-size: 26px;
+                    font-weight: 700;
+                    line-height: 33.8px;
+                    color: $dark_basic;
+                    margin-bottom: 24px;
+
+                    @media (max-width: $l) {
+                        font-size: 18px;
+                        line-height: 26px;
+                        margin-bottom: 12px;
+                    }
+                }
+
+                .card__text {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    color: $dark_basic;
+
+                    @media (max-width: $l) {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+
+        .seo-differences__slider {
+            display: none;
+
+            @media (max-width: $s) {
+                display: block;
+
+
+                #slider {
+                    margin: 0 auto;
+                }
+
+                .seo-differences__content-adaptive {
+                    display: flex;
+
+                    .card {
+                        width: 288px;
+                        min-height: 152px;
+                    }
+
+                }
+
+                #overflow {
+                    width: 288px;
+                    overflow: hidden;
+                }
+
+                #desktop:checked~#slider {
+                    max-width: 288px;
+                }
+
+                #switch1:checked~#controls label:nth-child(3),
+                #switch2:checked~#controls label:nth-child(1),
+                #switch3:checked~#controls label:nth-child(2) {
+                    background: url('../../assets/img/template/arrow-slider.png') no-repeat;
+                    rotate: -180deg;
+                    float: left;
+                    margin: 104px 0 0 0px;
+                    display: block;
+                    height: 40px;
+                    width: 40px;
+                }
+
+                #switch1:checked~#controls label:nth-child(2),
+                #switch2:checked~#controls label:nth-child(3),
+                #switch3:checked~#controls label:nth-child(1) {
+                    background: url('../../assets/img/template/arrow-slider.png') no-repeat;
+                    float: right;
+                    margin: 104px 0px 0 0;
+                    display: block;
+                    height: 40px;
+                    width: 40px;
+                }
+
+                label,
+                a {
+                    cursor: pointer;
+                }
+
+                input {
+                    display: none;
+                }
+
+                #switch1:checked~#slides .card {
+                    margin-left: 0;
+                }
+
+                #switch2:checked~#slides .card {
+                    margin-left: -100%;
+                }
+
+                #switch3:checked~#slides .card {
+                    margin-left: -200%;
+                }
+
+                #controls {
+                    margin: -25% 0 0 0;
+                    width: 100%;
+                    height: 50px;
+                }
+
+                #active label {
+                    border-radius: 10px;
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    background: #376FFF50;
+                }
+
+                #active {
+                    margin: 23% 0 0;
+                    text-align: center;
+                }
+
+                #active label:hover {
+                    background: #376FFF;
+                    border-color: #777 !important;
+                }
+
+                #switch1:checked~#active label:nth-child(1),
+                #switch2:checked~#active label:nth-child(2),
+                #switch3:checked~#active label:nth-child(3) {
+                    background: #376FFF;
+                    border-color: #376FFF !important;
+                }
+
+                #slides .card {
+                    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+                }
+
+                #controls label:hover {
+                    opacity: 0.6;
+                }
+
+                #controls label {
+                    transition: opacity 0.2s ease-out;
+                }
+
+                .card {
+                    min-height: 562px;
+                    width: 288px;
+                    border-top: 1px solid $light_basic;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start
+                }
+
+                .card__icon {
+                    padding: 18px 0;
+                    margin: 0;
+                }
+
+                .card__title {
+                    font-weight: 700;
+                    color: $dark_basic;
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin: 0;
+                    margin-bottom: 12px;
+                }
+
+                .card__text {
+                    font-weight: 400;
+                    color: $dark_basic;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+//Конец Блок 5 Чем SEO отличается от других инструментов продвижения
+
+// Блок 6 В конце мы ответим на часто задаваемые вопросы
+.faq {
+    background-image: url(../../assets/img/template/background-graph-paper.jpg);
+    .faq__container {
+        min-height: 1066px;
+        padding: 80px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+        @media (max-width: $l) {
+            min-height: 950px;
+            padding: 60px 0;
+        }
+        @media (max-width: $m) and (min-width: $s) {
+            min-height: 518px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            gap: 5px;
+            overflow: hidden;
+            .wrapper__text-cards::-webkit-scrollbar {
+                width: 4px;
+                background-color: $dark-secondary;
+                border-radius: 20px;
+            }
+            .wrapper__text-cards::-webkit-scrollbar-track {
+                background-color: $dark-secondary;
+                border-radius: 20px;
+                -webkit-box-shadow: none;
+            }
+            .wrapper__text-cards::-webkit-scrollbar-thumb {
+                background-color: $light_basic;
+                border-radius: 20px;
+            }
+        }
+        @media (max-width: $s) {
+            flex-direction: column;
+            min-height: 1552px;
+            gap: 20px;
+        }
+        h2 {
+            line-height: 40px;
+            text-align: center;
+            color: $dark_tertiary;
+            @media (max-width: $l) {
+                font-size: 28px;
+                line-height: 36px;
+            }
+            @media (max-width: $m) {
+                padding-bottom: 40px;
+            }
+            @media (max-width: $s) {
+                padding-bottom:0;
+            }
+        }
+        .faq__wrapper{
+            display: flex;
+            margin: 0;
+            gap: 40px;
+            @media (max-width: $l) {
+                gap: 60px;
+            }
+            @media (max-width: $m) {
+                gap: 20px;
+                min-height: 350px;
+                padding:0;
+            }
+            @media (max-width: $s) {
+                flex-direction: column-reverse;
+                min-height: 1336px;
+                gap: 20px;
+                padding: 0;
+            }
+            .wrapper__text-cards{
+                max-width: 560px;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 20px;
+                height: 100%;
+                color: $dark_tertiary;
+                @media (max-width: $l) {
+                    max-width: 426px;
+                }
+                @media (max-width: $m) and (min-width: $s) {
+                    max-width: 314px;
+                    height: 354px;
+                    gap: 10px;
+                    padding-right: 10px;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                }
+                @media (max-width: $s) {
+                    min-height: 988px;
+                }
+                .card__title {
+                    color: $purple_basic;
+                    font-weight: 700;
+                    font-size: 26px;
+                    line-height: 33.8px;
+                    @media (max-width: $l) {
+                        font-size: 18px;
+                        line-height: 26px;
+                    }
+                }
+                .card__text {
+                    padding-top: 15px;
+                    color: $purple_basic;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 28px;
+                    @media (max-width: $l) {
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding-top: 20px;
+                    }
+                }
+                .card__line {
+                    margin: 0;
+                    border: 1px solid $dark-secondary;
+                    width: 40px;
+                }
+            }
+            .wrapper__image-card{
+                max-width: 799px;
+                display: flex;
+                margin: 0;
+                align-items: center;
+                .item-img{
+                    width: 100%;
+                    @media (max-width: $l) {
+                        max-width: 462px;
+                        padding: 60px 0;
+                    }
+                    @media (max-width: $m) {
+                        align-items: center;
+                        max-width: 334px;
+                        min-height: 334px;
+                        padding:0;
+                    }
+                    @media (max-width: $s) {
+                        flex-direction: column;
+                        flex-basis: 100%;
+                        max-width: 288px;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+//конец Блок 6 В конце мы ответим на часто задаваемые вопросы
+
+//Блок 7 Клиенты, которые нам доверяют (отдельный файл _template_OurClients.scss)
+
+//Блок 8 footer (отдельный файл _template_footer.scss)

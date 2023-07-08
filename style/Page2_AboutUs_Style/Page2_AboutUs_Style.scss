@@ -7,8 +7,9 @@
 @import '../template_footer';
 @import '../template_OurClients';
 
-//Блок 2_Наша команда является специалистами в сфере...(начало)
+//Блок 1 header (отдельный файл _template_header.scss)
 
+//Блок 2 Наша команда является специалистами в сфере...
     .description-about-us{
         background-image: url(../../assets/img/template/background-graph-paper.jpg);
         .description-about-us__container{
@@ -95,7 +96,7 @@
                 color: $dark_tertiary;
                 font-weight: 400;
                 font-size:20px;
-                line-height: 28px; 
+                line-height: 28px;
                 @media (max-width: $l) {
                     font-size: 16px;
                     line-height: 24px;
@@ -103,8 +104,9 @@
             }
         }
     }
-        //Блок 2_Наша команда является специалистами в сфере...(конец)
+//Конец Блок 2_Наша команда является специалистами в сфере...
 
+// Блок 3 с аккордеоном "Почему стоит выбрать именно нас"
 .h2 {
     font-family: $font;
     font-size: 38px;
@@ -116,8 +118,6 @@
     max-width: $container-xl;
     margin: 0 auto;
 }
-
-// Секция с аккордеоном "Почему стоит выбрать именно нас"
 
 .about-working {
     &__container {
@@ -333,11 +333,9 @@ input[type="checkbox"] {
         }
     }
 }
+// Конец Блок 3 с аккордеоном "Почему стоит выбрать именно нас"
 
-// КОНЕЦ Секция с аккордеоном "Почему стоит выбрать именно нас"
-
-//Блок 4_Цифры говорят за нас (начало)
-    /*Блок 4_Цифры говорят за нас (начало)*/
+//Блок 4 Цифры говорят за нас
     .numbers-about-us{
         background-color: $purple_basic;
         .numbers-about-us__container{
@@ -433,4 +431,8 @@ input[type="checkbox"] {
             }
         }
     }
-        //Блок 4_Цифры говорят за нас (конец)
+        //Блок 4 Цифры говорят за нас
+
+        //Блок 5 Клиенты, которые нам доверяют (отдельный файл _template_OurClients.scss)
+
+        //Блок 6 footer (отдельный файл _template_footer.scss)

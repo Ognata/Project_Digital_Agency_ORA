@@ -13,13 +13,13 @@
     padding: 0;
 }
 
+//Блок 1 header (отдельный файл _template_header.scss)
+
+// Блок 2 Ведение социальных сетей
 .container {
     width: $container-xl;
     margin: 0 auto;
 }
-
-// СММ / Ведение социальных сетей Блок 2
-
 .section_name_social-networks {
     background-image: url(../../assets/img/template/light-blue-bg.svg);
 
@@ -95,9 +95,9 @@
         }
     }
 }
+// Конец Блок 2 Ведение социальных сетей
 
-//блок 3 section content plan
-
+// Блок 3 section content plan
 .section_name_content-plan {
 
     .section__table {
@@ -158,11 +158,9 @@
         }
     }
 }
+//Конец Блок3 section content plan
 
-//конец блок3 section content plan
-
-//блок 4 section communication structure
-
+//Блок 4 section communication structure
 .section_name_communication {
     background-color: $lightgrey_basic;
     background-image: url(../../assets/img/template/light-blue-bg.svg);
@@ -182,142 +180,10 @@
         padding: 10px 16px;
     }
 }
-//конец блок 4 section communication structure
-
-// //section content plan
-
-// .section_name_content-plan {
-
-//     .section__table {
-
-//         @media (max-width:$m) {
-//             display: none;
-//         }
-//     }
-
-//     .section__table_mobile {
-//         @media (max-width:$m) {
-//             display: table;
-//         }
-//     }
-// }
-
-// .table_section_content-plan {
-
-//     @media (max-width:$s) {
-//         border-radius: 0;
-//     }
-
-//     .table__row:nth-of-type(2n),
-//     .table__row_style_dark {
-//         background-color: $lightgrey_basic;
-//         background-image: none;
-//     }
-
-//     .table__cell:not(.table__cell_head) {
-//         padding-top: 12px;
-//     }
-
-//     .table__cell {
-//         @media (max-width:$l) {
-//             padding-left: 10px;
-//         }
-
-//         @media (max-width:$m) {
-//             padding: 15px 20px 20px 15px;
-//         }
-//     }
-
-//     .table__cell-text {
-//         margin: 4px 0;
-//     }
-
-//     .table__cell-grid {
-//         display: grid;
-//         grid-template-columns: repeat(4, 1fr);
-//         gap: 15px;
-
-//         @media (max-width:$s) {
-//             grid-template-columns: repeat(2, 1fr);
-//         }
-
-//         .table__cell-grid-item:last-of-type {
-//             grid-column: 1/-1;
-//         }
-//     }
-// }
-
-// //section communication structure
-
-// .section_name_communication {
-//     background-color: $lightgrey_basic;
-//     background-image: url(../../assets/img/template/light-blue-bg.svg);
-// }
-
-// .table_section_communication .table__cell {
-
-//     @media (max-width:$l) {
-//         padding: 20px 10px;
-//     }
-
-//     @media (max-width:$m) {
-//         padding-right: 0;
-//     }
-
-//     @media (max-width:$s) {
-//         padding: 10px 16px;
-//     }
-// }
+//Конец Блок 4 section communication structure
 
 
-
-
-// .section_name_advertising-goals {
-//     background-color: $lightgrey_basic;
-//     background-image: url(../../assets/img/template/light-blue-bg.svg);
-
-//     .section__text {
-//         margin-left: auto;
-//         margin-right: auto;
-//         max-width: 920px;
-
-//         @media (max-width:$l) {
-//             max-width: none;
-//         }
-//     }
-// }
-
-// .section_name_cost-of-services {
-//     background-color: $lightgrey_basic;
-//     background-image: url(../../assets/img/template/light-blue-bg.svg);
-
-//     .section__title {
-//         margin-bottom: 60px;
-
-//         @media (max-width:$l) {
-//             margin-bottom: 40px;
-//         }
-
-//         @media (max-width:$m) {
-//             margin-bottom: 32px;
-//         }
-//     }
-// }
-
-// .section_name_cost-of-services .section__infoblock {
-//     margin-top: 60px;
-
-//     @media (max-width:$l) {
-//         margin-top: 40px;
-//     }
-
-//     @media (max-width:$m) {
-//         margin-top: 32px;
-//     }
-// }
-
-// Секция 5 - "Таргетированная реклама"
-
+// Блок 5 - "Таргетированная реклама"
 .container-target {
     margin: 80px auto;
     min-height: 595px;
@@ -512,6 +378,7 @@
             font-size: 28px;
             line-height: 36px;
             margin-bottom: 32px;
+            margin-top: 40px;
 
             br {
                 display: block;
@@ -559,11 +426,9 @@
         }
     }
 }
+// Конец Блок 5 - "Таргетированная реклама"
 
-// Конец Секция 5 - "Таргетированная реклама"
-
-// <!-- Блок 6 черный ' почему нужно использовать…..' -->
-
+// Блок 6 черный ' почему нужно использовать…..' -->
 .why-social {
     background-color: $purple_basic;
 
@@ -821,9 +686,9 @@
         transition: opacity 0.2s ease-out;
     }
 }
-// <!-- Конец Блок 6 черный ' почему нужно использовать…..' -->
+// Конец Блок 6 черный ' почему нужно использовать…..'
 
-// 7 блок Настройки таргетинга
+// Блок 7 Настройки таргетинга
 .container {
     max-width: $container-xl;
     margin: 0 auto;
@@ -1048,10 +913,9 @@
         }
     }
 }
-// 7 блок Настройки таргетинга
+// Конец Блок 7 Настройки таргетинга
 
-// блок 8 Цели рекламной компании
-
+// Блок 8 Цели рекламной компании
 .section_name_advertising-goals {
     background-color: $lightgrey_basic;
     background-image: url(../../assets/img/template/light-blue-bg.svg);
@@ -1066,11 +930,9 @@
         }
     }
 }
-
-// конец блок 8 Цели рекламной компании
+// Конец Блок 8 Цели рекламной компании
 
 // Блок 9 section  "После определения аудитории..."
-
 .objective-accordion {
     display: flex;
     align-items: center;
@@ -1349,11 +1211,9 @@ input[type="checkbox"] {
         }
     }
 }
+// Конец Блок 9 section  "После определения аудитории..."
 
-// конец блок 9 section  "После определения аудитории..."
-
-// блок 10 Стоимость услуг
-
+// Блок 10 Стоимость услуг
 .section_name_cost-of-services {
     background-color: $lightgrey_basic;
     background-image: url(../../assets/img/template/light-blue-bg.svg);
@@ -1382,7 +1242,8 @@ input[type="checkbox"] {
         margin-top: 32px;
     }
 }
+// конец Блок 10 Стоимость услуг
 
-// конец блок 10 Стоимость услуг
+//Блок 11 Клиенты, которые нам доверяют (отдельный файл _template_OurClients.scss)
 
-//Блок 11_Клиенты, которые нам доверяют (отдельный файл _template_OurClients.scss)
+//Блок 12 footer (отдельный файл _template_footer.scss)

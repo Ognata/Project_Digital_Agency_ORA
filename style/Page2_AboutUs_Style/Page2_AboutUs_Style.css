@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;900&display=swap");
 * {
   box-sizing: border-box;
@@ -1642,7 +1641,6 @@ input[type=checkbox] {
     margin-bottom: 12px;
   }
 }
-/*Блок 4_Цифры говорят за нас (начало)*/
 .numbers-about-us {
   background-color: #393A56;
 }
