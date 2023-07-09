@@ -1190,18 +1190,22 @@ body {
 .our-clients__container .container__logos {
   min-height: 242px;
   display: flex;
-  row-gap: 10px;
+  gap: 20px;
   flex-flow: wrap;
   justify-content: center;
 }
 @media (max-width: 1460px) {
   .our-clients__container .container__logos {
     min-height: 164px;
+    justify-content: space-between;
+    gap: 15px;
   }
 }
 @media (max-width: 1023px) {
   .our-clients__container .container__logos {
     min-height: 224px;
+    justify-content: center;
+    gap: 10px;
   }
 }
 @media (max-width: 767px) {
@@ -1615,6 +1619,7 @@ body {
 @media (max-width: 1023px) {
   .show-ad__container {
     max-width: 688px;
+    padding: 60px 0;
   }
 }
 @media (max-width: 767px) {
@@ -1633,7 +1638,6 @@ body {
 .show-ad__show-items {
   display: flex;
   justify-content: space-between;
-  flex-grow: 1;
   align-content: space-between;
 }
 @media (max-width: 767px) {
@@ -1955,6 +1959,16 @@ body {
 @media (max-width: 1460px) {
   .ad-in-google__container h2 {
     font-size: 28px;
+  }
+}
+@media (max-width: 1023px) {
+  .ad-in-google__container h2 {
+    padding: 60px 0 50px 0;
+  }
+}
+@media (max-width: 767px) {
+  .ad-in-google__container h2 {
+    padding: 40px 0 30px 0;
   }
 }
 .ad-in-google__container h3 {

@@ -196,6 +196,7 @@
         line-height: 40px;
         text-align: center;
         margin-bottom: 60px;
+        margin-top: 80px;
 
         br {
             display: none;
@@ -290,14 +291,15 @@
     }
 
     .container-target {
-        margin: 0px auto;
-        padding-top: 40px;
+        margin: 80px auto;
+        padding-top: 60px;
         max-height: 482px;
 
         &__tittle {
             font-size: 32px;
             line-height: 36px;
             margin-bottom: 32px;
+            margin-top: 60px;
 
             br {
                 display: none;
@@ -308,6 +310,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 60px;
         }
 
         &__img {

@@ -320,6 +320,7 @@
     }
     @media (max-width: $m) {
         max-width: $container-m;
+        padding: 60px 0;
     }
     @media (max-width: $s) {
         max-width: $container-s;
@@ -339,7 +340,7 @@
     @media (max-width: $s) {
     flex-wrap: wrap;
     }
-    flex-grow: 1;
+    // flex-grow: 1;
     align-content: space-between;
 }
 
@@ -657,6 +658,12 @@
 
         @media (max-width:$l) {
             font-size: 28px;
+        }
+        @media (max-width:$m) {
+            padding: 60px 0 50px 0;
+        }
+        @media (max-width:$s) {
+            padding: 40px 0 30px 0;
         }
     }
 
