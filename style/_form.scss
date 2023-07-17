@@ -68,6 +68,7 @@
                 line-height: 20px;
                 border: 2px solid $dark_secondary;
                 border-radius: 10px;
+                outline:none;
                 @media (max-width:$l) {
                     width: 342px;
                     height: 60px;
